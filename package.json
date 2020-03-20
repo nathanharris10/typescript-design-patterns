@@ -4,7 +4,7 @@
     "private": true,
     "description": "Typescript design patterns",
     "scripts": {
-        "pattern-decorator": "tsc ./design-patterns/decorator/decorator.ts | node ./design-patterns/decorator/decorator.js"
+        "pattern-decorator": "tsc ./design-patterns/decorator/decorator.ts && node ./design-patterns/decorator/decorator.js"
     },
     "devDependencies": {
         "typescript": "^3.8.3"

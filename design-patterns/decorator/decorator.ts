@@ -64,8 +64,26 @@ class DualMotor extends CarOptions {
   }
 }
 
+class HeatedSeats extends CarOptions {
+  decoratedCar: Car;
+  description = ", Heated Seats";
+  cost = 1250;
+
+  constructor(car: Car) {
+    super();
+    this.decoratedCar = car;
+  }
+
+  public getDescription(): string {
+    return this.decoratedCar.getDescription() + this.description;
+  }
+  public getCost(): number {
+    return this.decoratedCar.getCost() + this.cost;
+  }
+}
+
 const log = (car: Car) => {
-  console.log(`Car: description: ${car.getDescription()}, cost: ${car.getCost()}`);
+  console.log(`Car -> Description: ${car.getDescription()}, Cost: ${car.getCost()}`);
 };
 
 let myCar = new ModelS();
@@ -77,4 +95,8 @@ log(myCar);
 
 console.log('\nAdding Dual Motor Option...');
 myCar = new DualMotor(myCar);
+log(myCar);
+
+console.log('\nAdding Heated Seats Option...');
+myCar = new HeatedSeats(myCar);
 log(myCar);
