@@ -18,7 +18,7 @@ _Sources_: [Wikipedia](https://en.wikipedia.org/wiki/Decorator_pattern)
 
 Allows for easy distribution of event handling systems. Pattern centralizes the notification logic to the `Subject` object and the "reaction logic" to the `Observer` objects.
 
-\* _Note_: Personally, I prefer the term `Observable` over `Subject` so in my example, you'll see `Observable`. The term `Subject` is too generic and doesn't clearly indicate the observer pattern to me.
+_Note_: Personally, I prefer the term `Observable` over `Subject` so in my example, you'll see `Observable`. The term `Subject` is too generic and doesn't clearly indicate the observer pattern to me.
 
 _Sources_: [Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
 
