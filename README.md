@@ -16,9 +16,9 @@ _My Take_: I don't use this pattern often but it is a powerful pattern for speci
 
 Other Sources: [Wikipedia](https://en.wikipedia.org/wiki/Decorator_pattern)
 
-TBD
-
 ### Observer
+
+TBD
 
 Other Sources: [Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
 
