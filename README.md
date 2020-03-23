@@ -24,6 +24,8 @@ _Sources_: [Wikipedia](https://en.wikipedia.org/wiki/Observer_pattern)
 
 ### Facade
 
-TBD
+Hides very complex, or difficult to understand, code behind a single (and simplified) API. Improves readability and usability of client code, as well as, making unit testing easier since only the API needs to be mocked instead of the implementation details. Also often used to wrap legacy code which provides a clean break for refactoring efforts.
+
+Facades are also commonly used with ACLs (anti-corruption layer), as part of Domain Driven design, to cleanly separate different systems.
 
 _Sources_: [Wikipedia](https://en.wikipedia.org/wiki/Facade_pattern)
