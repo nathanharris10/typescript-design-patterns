@@ -87,7 +87,7 @@ class HeadUnitFacade {
   }
 
   playRock() {
-    console.log(`\nLet's Rock!`);
+    console.log("\nPlaying rock CD...");
     this.display.turnOn();
     this.display.setBackgroundColor("blue");
 
@@ -99,6 +99,20 @@ class HeadUnitFacade {
     this.cdPlayer.turnOn();
     this.cdPlayer.setCD("Breaking Benjamin");
     this.cdPlayer.play();
+  }
+
+  playIndyHitsStation() {
+    console.log("\nPlaying alternative rock radio station...");
+    this.display.turnOn();
+    this.display.setBackgroundColor("yellow");
+
+    this.cdPlayer.turnOff();
+
+    this.equalizer.setBass(3);
+    this.equalizer.setTreble(2);
+
+    this.radio.turnOn();
+    this.radio.setStation(99.5);
   }
 
   turnOff() {
@@ -122,5 +136,7 @@ const myHeadUnit = new HeadUnitFacade(
 );
 
 myHeadUnit.playRock();
+
+myHeadUnit.playIndyHitsStation();
 
 myHeadUnit.turnOff();
