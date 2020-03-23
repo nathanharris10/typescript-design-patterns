@@ -84,3 +84,7 @@ const mySpeedLimiter = new SpeedLimiter(myCar);
 myCar.setSpeed(35);
 myCar.setSpeed(45);
 myCar.setSpeed(55);
+
+console.log('\nRemoving speed limiter cause I want to go faster!!');
+myCar.removeObserver(mySpeedLimiter);
+myCar.setSpeed(60);
