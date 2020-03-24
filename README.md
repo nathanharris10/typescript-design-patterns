@@ -7,6 +7,7 @@ Popular design patterns implemented in TypeScript.
 - [Decorator](###-Decorator)
 - [Observer](###-Observer)
 - [Facade](###-Facade)
+- [Adapter](###-Adapter)
 
 ### Decorator
 
@@ -26,6 +27,14 @@ _Additional Sources_: [Observer Pattern](https://en.wikipedia.org/wiki/Observer_
 
 Hides very complex, or difficult to understand, code behind a single (and simplified) API. Improves readability and usability of client code, as well as, making unit testing easier since only the API needs to be mocked instead of the implementation details. Also often used to wrap legacy code which provides a clean break for refactoring efforts.
 
-Facades are also commonly used with ACLs (anti-corruption layer), as part of Domain Driven design, to cleanly separate different systems.
+Facades are also commonly used in ACLs (anti-corruption layer), as part of Domain Driven design, to cleanly separate different systems.
 
 _Additional Sources_: [Facade Pattern](https://en.wikipedia.org/wiki/Facade_pattern), [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)
+
+### Adapter
+
+Allows two different interfaces to communicate with each other without changing their implementation. Very much like adapters used for charging our electronic devices across Europe and US.
+
+Similarly to Facades, Adapters are also commonly used in ACLs (anti-corruption layer), as part of Domain Driven design, to cleanly separate different systems.
+
+_Additional Sources_: [Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pattern), [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)
