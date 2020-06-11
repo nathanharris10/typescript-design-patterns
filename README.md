@@ -38,3 +38,9 @@ Allows two different interfaces to communicate with each other without changing 
 Similarly to Facades, Adapters are also commonly used in ACLs (anti-corruption layer), as part of Domain Driven design, to cleanly separate different systems.
 
 _Additional Sources_: [Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pattern), [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design)
+
+### Builder
+
+One of my go-to patterns, the builder pattern allows for very flexible contruction of an object in a way that's easy to read, maintain, and expand upon.
+
+_Additional Sources_: [Adapter Pattern](https://en.wikipedia.org/wiki/Builder_pattern)
