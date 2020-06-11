@@ -8,6 +8,7 @@ Popular design patterns implemented in TypeScript.
 - [Observer](###-Observer)
 - [Facade](###-Facade)
 - [Adapter](###-Adapter)
+- [Builder](###-Builder)
 
 ### Decorator
 
@@ -41,6 +42,6 @@ _Additional Sources_: [Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pa
 
 ### Builder
 
-One of my go-to patterns, the builder pattern allows for very flexible contruction of an object in a way that's easy to read, maintain, and expand upon.
+One of my go-to patterns, the builder pattern allows for very flexible contruction of an object in a way that's easy to read, maintain, and expand upon. Eliminates the need for telescoping constructors and keeps the codebase small.
 
-_Additional Sources_: [Adapter Pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+_Additional Sources_: [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern)
