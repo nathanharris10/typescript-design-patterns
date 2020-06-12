@@ -9,6 +9,9 @@ class CarBuilder {
   private readonly car: Car;
 
   constructor(make: string, model: string) {
+    if (make == null) throw Error("Make cannot be null.");
+    if (model == null) throw Error("Model cannot be null.");
+
     this.car = {
       make: make,
       model: model,
@@ -47,11 +50,11 @@ const myCarBuilder = new CarBuilder("Toyota", "Camry");
 console.log(`myCarBuilder: ${JSON.stringify(myCarBuilder)}`);
 
 console.log(`Retrieving VIN from repo....`);
-myCarBuilder.vin('5NPE34AB4FH138219');
+myCarBuilder.vin("5NPE34AB4FH138219");
 console.log(`myCarBuilder: ${JSON.stringify(myCarBuilder)}`);
 
-console.log('Retrieving Color from API....');
-myCarBuilder.color('Red');
+console.log("Retrieving Color from API....");
+myCarBuilder.color("Red");
 console.log(`myCarBuilder: ${JSON.stringify(myCarBuilder)}`);
 
 console.log(`myCar: ${JSON.stringify(myCarBuilder.build())}`);
