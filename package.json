@@ -9,7 +9,8 @@
         "pattern-facade": "tsc ./design-patterns/facade/facade.ts && node ./design-patterns/facade/facade.js",
         "pattern-adapter": "tsc ./design-patterns/adapter/adapter.ts && node ./design-patterns/adapter/adapter.js",
         "pattern-builder": "tsc ./design-patterns/builder/builder.ts && node ./design-patterns/builder/builder.js",
-        "pattern-strategy-single": "tsc ./design-patterns/strategy/strategy_single.ts && node ./design-patterns/strategy/strategy_single.js"
+        "pattern-strategy-single": "tsc ./design-patterns/strategy/strategy_single.ts && node ./design-patterns/strategy/strategy_single.js",
+        "pattern-strategy-multiple": "tsc ./design-patterns/strategy/strategy_multiple.ts && node ./design-patterns/strategy/strategy_multiple.js"
     },
     "devDependencies": {
         "typescript": "^3.8.3"
