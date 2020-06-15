@@ -1,31 +1,31 @@
 class Car {
-  private readonly brakeBehavior;
+    private readonly brakeBehavior;
 
-  constructor(brakeBehavior: BrakeBehavior) {
-    if (brakeBehavior == null) throw new Error("Brake behavior cannot be null");
+    constructor(brakeBehavior: BrakeBehavior) {
+        if (brakeBehavior == null) throw new Error('Brake behavior cannot be null');
 
-    this.brakeBehavior = brakeBehavior;
-  }
+        this.brakeBehavior = brakeBehavior;
+    }
 
-  applyBrakes() {
-    this.brakeBehavior.apply();
-  }
+    applyBrakes() {
+        this.brakeBehavior.apply();
+    }
 }
 
 interface BrakeBehavior {
-  apply(): void;
+    apply(): void;
 }
 
 class ABSBrakeBehavior implements BrakeBehavior {
-  apply(): void {
-    console.log("Applying ABS brakes...");
-  }
+    apply(): void {
+        console.log('Applying ABS brakes...');
+    }
 }
 
 class StandardBrakeBehavior implements BrakeBehavior {
-  apply(): void {
-    console.log("Applying standard brakes...");
-  }
+    apply(): void {
+        console.log('Applying standard brakes...');
+    }
 }
 
 let myCar = new Car(new ABSBrakeBehavior());
