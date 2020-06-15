@@ -45,3 +45,9 @@ _Additional Sources_: [Adapter Pattern](https://en.wikipedia.org/wiki/Adapter_pa
 One of my go-to patterns, the builder pattern allows for very flexible contruction of an object in a way that's easy to read, maintain, and expand upon. Eliminates the need for telescoping constructors and keeps the codebase small.
 
 _Additional Sources_: [Builder Pattern](https://en.wikipedia.org/wiki/Builder_pattern)
+
+### Strategy
+
+Another really popular and fun pattern that is easily adaptable to many scenarios. Typically, this pattern is designed to represent a group, or family, of rules/processes and only one is applicable to a scenario. However, this is easily extendable to allow any combination of rules/processes to apply to a scenario. This allows for easy encapsulation of code for each rule/process.
+
+_Additional Sources_: [Builder Pattern](https://en.wikipedia.org/wiki/Strategy_pattern)
